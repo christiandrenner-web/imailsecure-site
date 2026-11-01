@@ -47,7 +47,7 @@ App-Quellcode bleibt davon unberührt.
 
    ```bash
    cd ~/XCODE/imailsecure-site
-   git remote add origin git@github.com:<BENUTZER>/imailsecure-site.git
+   git remote add origin git@github.com:christiandrenner-web/imailsecure-site.git
    git branch -M main
    git push -u origin main
    ```
@@ -60,17 +60,16 @@ App-Quellcode bleibt davon unberührt.
 4. Nach ein bis zwei Minuten ist die Seite erreichbar unter:
 
    ```
-   https://<BENUTZER>.github.io/imailsecure-site/
-   https://<BENUTZER>.github.io/imailsecure-site/privacy.html
-   https://<BENUTZER>.github.io/imailsecure-site/support.html
+   https://christiandrenner-web.github.io/imailsecure-site/
+   https://christiandrenner-web.github.io/imailsecure-site/privacy.html
+   https://christiandrenner-web.github.io/imailsecure-site/support.html
    ```
 
-5. Diese beiden URLs in der App eintragen —
+5. Diese URLs sind bereits in der App eingetragen —
    `Sources/iMailSecure/Utilities/Constants.swift`:
 
    ```swift
-   static let privacyPolicyURL = "https://<BENUTZER>.github.io/imailsecure-site/privacy.html"
-   static let supportEmail     = "<kontakt@deine-domain.example>"
+   static let privacyPolicyURL = "https://christiandrenner-web.github.io/imailsecure-site/privacy.html"
    ```
 
 ## Eigene Domain (optional, später)
