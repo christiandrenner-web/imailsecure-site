@@ -101,3 +101,8 @@ python3 -m http.server 8080
 
 Die Texte dieser Website stehen unter CC BY 4.0 — außer Logo und Name
 „iMail Secure", die nicht als eigene Marke verwendet werden dürfen.
+
+Die **App** steht unter der PolyForm Noncommercial 1.0.0 (Quellcode einsehbar,
+keine kommerzielle Nutzung durch Dritte). Das ist kein Open Source; die
+Bezeichnung darf auch auf dieser Website nicht verwendet werden. Details im
+App-Repo unter `LICENSING.md`.
