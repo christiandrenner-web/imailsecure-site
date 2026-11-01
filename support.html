@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — iMail Secure</title>
+<meta name="description" content="Hilfe und Kontakt für iMail Secure: Konten einrichten, HTML-Anzeige, Zertifikatswarnungen, Lesebestätigungen.">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="style.css">
+<!-- Keine externen Ressourcen: keine Fonts, keine Skripte, keine Analytics. -->
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">iMail Secure</a>
+    <nav>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html#impressum">Impressum</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h1>Support</h1>
+    <p class="lead">
+      Hilfe zur App, Fehlerberichte und Fragen zum Datenschutz.
+    </p>
+
+    <div class="card">
+      <p style="margin:0">
+        <strong>Kontakt:</strong>
+        <span class="placeholder">[kontakt@deine-domain.example]</span><br>
+        <span class="small muted">
+          Bitte keine Passwörter mitschicken. Für Fehlerberichte genügen
+          iOS-Version, Gerätemodell und eine Beschreibung, was passiert ist.
+        </span>
+      </p>
+    </div>
+
+    <h2>Häufige Fragen</h2>
+
+    <h3>Warum sehe ich nur Text und keine Bilder?</h3>
+    <p>
+      Das ist Absicht. Externe Bilder und Stylesheets sind der übliche Weg, mit dem
+      Absender erfahren, dass und wann du eine Mail geöffnet hast. Unter der
+      Textfassung steht ein Knopf <em>„HTML anzeigen"</em>. Er rendert das HTML
+      lokal, ohne Netzwerkzugriff — Bilder von fremden Servern werden also auch
+      dann nicht geladen.
+    </p>
+
+    <h3>Wie richte ich ein Konto ein?</h3>
+    <p>
+      Du brauchst die IMAP- und SMTP-Zugangsdaten deines Anbieters. Üblich sind
+      Port 993 (IMAP, implizites TLS) und Port 587 (SMTP, STARTTLS) oder 465
+      (SMTP, implizites TLS). Viele Anbieter verlangen ein eigenes
+      „App-Passwort" statt deines normalen Passworts.
+    </p>
+
+    <h3>Die App meldet ein geändertes Zertifikat. Was jetzt?</h3>
+    <p>
+      Beim ersten Verbinden merkt sich die App den Fingerabdruck des
+      Server-Zertifikats. Ändert er sich, bricht sie ab — das kann eine legitime
+      Zertifikatserneuerung sein oder ein Angriff auf die Verbindung.
+    </p>
+    <p>
+      Prüfe den neuen Fingerabdruck beim Anbieter (meist in der Hilfe zum
+      Mailserver dokumentiert). Nur wenn er übereinstimmt, setze den Pin unter
+      <em>Einstellungen → Konto → Zertifikate</em> zurück. Danach wird der
+      aktuelle Fingerabdruck ohne Vergleich übernommen.
+    </p>
+
+    <h3>Werden meine Daten irgendwohin übertragen?</h3>
+    <p>
+      Nein. Die App enthält keine Telemetrie und verbindet sich nur mit dem
+      Mailserver, den du eingetragen hast. Details stehen in der
+      <a href="privacy.html">Datenschutzerklärung</a>.
+    </p>
+
+    <h3>Was passiert bei einer Lesebestätigung?</h3>
+    <p>
+      Fordert ein Absender eine Lesebestätigung an, zeigt die App einen Hinweis.
+      Gesendet wird nur, wenn du ausdrücklich zustimmst. Standardmäßig ist das
+      nicht der Fall.
+    </p>
+
+    <h3>Kann ich mehrere Konten nutzen?</h3>
+    <p>
+      Ja. Jedes Konto hat eigene Server-Einstellungen, eigene Zugangsdaten im
+      Keychain und eigene Zertifikat-Pins.
+    </p>
+
+    <h3>Ist die App schon im App Store?</h3>
+    <p>
+      Nein, sie ist in Entwicklung. Diese Seite und die
+      <a href="privacy.html">Datenschutzerklärung</a> existieren bereits, weil sie
+      vor einer Veröffentlichung verfügbar sein müssen.
+    </p>
+
+    <hr>
+
+    <h2>Fehler melden</h2>
+    <p>
+      Wenn du einen Fehler findest, hilft eine kurze Beschreibung mit
+      iOS-Version, Gerätemodell und den Schritten, nach denen er auftritt.
+      Bitte keine Mail-Inhalte oder Zugangsdaten in einen Fehlerbericht kopieren.
+    </p>
+    <p class="small muted">
+      Sicherheitslücken bitte direkt per E-Mail melden, nicht öffentlich
+      posten — damit Nutzer geschützt werden können, bevor Details bekannt sind.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 iMail Secure</span>
+    <a href="index.html">Start</a>
+    <a href="privacy.html">Datenschutz</a>
+  </div>
+</footer>
+
+</body>
+</html>

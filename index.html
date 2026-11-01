@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iMail Secure — E-Mail-Client für iOS ohne Tracking</title>
+<meta name="description" content="iMail Secure ist ein datenschutzfreundlicher E-Mail-Client für iOS: TLS-only, Zertifikat-Pinning, Text zuerst, HTML nur auf Knopfdruck. Kein Tracking, keine Telemetrie.">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="style.css">
+<!-- Keine externen Ressourcen: keine Fonts, keine Skripte, keine Analytics. -->
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">iMail Secure</a>
+    <nav>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html#impressum">Impressum</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <span class="badge">In Entwicklung</span>
+
+    <h1>E-Mail, die niemanden verrät.</h1>
+    <p class="lead">
+      iMail Secure ist ein E-Mail-Client für iOS, der davon ausgeht, dass der Inhalt
+      deiner Post niemanden etwas angeht — außer dich und den Absender.
+    </p>
+
+    <div class="card">
+      <p style="margin:0">
+        <strong>Kurzfassung:</strong> kein Tracking, keine Analytics, keine Werbe-SDKs,
+        keine Cloud. Der Quellcode ist offen und nachprüfbar.
+      </p>
+    </div>
+
+    <h2>Was die App anders macht</h2>
+
+    <div class="grid">
+      <div class="feature">
+        <strong>Text zuerst</strong>
+        <span>Mails werden standardmäßig als reiner Text angezeigt. HTML gibt es nur,
+        wenn du es ausdrücklich anforderst.</span>
+      </div>
+      <div class="feature">
+        <strong>Externe Inhalte blockiert</strong>
+        <span>Bilder, Stylesheets und Tracker werden nicht geladen. Ein Zählpixel kann
+        nicht melden, dass du die Mail geöffnet hast.</span>
+      </div>
+      <div class="feature">
+        <strong>Kein Klartext, kein Downgrade</strong>
+        <span>Jede Verbindung läuft über TLS. Schlägt das Upgrade fehl, bricht die App ab,
+        statt unverschlüsselt weiterzumachen.</span>
+      </div>
+      <div class="feature">
+        <strong>Zertifikat-Pinning</strong>
+        <span>Der Fingerabdruck des Server-Zertifikats wird beim ersten Verbinden gespeichert.
+        Ändert er sich, warnt die App — statt still weiterzusenden.</span>
+      </div>
+      <div class="feature">
+        <strong>Zugangsdaten im Keychain</strong>
+        <span>Passwörter liegen ausschließlich im iOS-Keychain, nur auf diesem Gerät,
+        ohne iCloud-Synchronisierung.</span>
+      </div>
+      <div class="feature">
+        <strong>Links im Klartext</strong>
+        <span>Tracking-Parameter werden entfernt. Bevor eine Seite geöffnet wird,
+        siehst du das tatsächliche Ziel.</span>
+      </div>
+    </div>
+
+    <h2>Warum</h2>
+    <p>
+      Die meisten Mail-Apps finanzieren sich über Daten: sie laden Remote-Inhalte,
+      erkennen Öffnungen, verknüpfen Geräte und reichen das an Werbenetzwerke weiter.
+      Das ist kein Unfall, sondern das Geschäftsmodell.
+    </p>
+    <p>
+      iMail Secure dreht das um. Die App hat kein Interesse an deinen Daten, weil sie
+      damit kein Geld verdient. Was nicht erhoben wird, kann nicht verloren gehen,
+      nicht verkauft werden und nicht in einer Datenpanne auftauchen.
+    </p>
+
+    <h2>Stand</h2>
+    <p>
+      Die App ist in Entwicklung. Es gibt noch keine öffentliche Version und keinen
+      App-Store-Eintrag. Diese Seite existiert, weil Datenschutz erklärbar sein muss —
+      nicht erst, wenn die App fertig ist.
+    </p>
+
+    <h2>Fragen</h2>
+    <p>
+      Antworten auf die häufigsten Fragen stehen unter
+      <a href="support.html">Support</a>. Wie mit Daten umgegangen wird, steht
+      vollständig in der <a href="privacy.html">Datenschutzerklärung</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 iMail Secure</span>
+    <a href="privacy.html">Datenschutz</a>
+    <a href="privacy.html#impressum">Impressum</a>
+    <a href="support.html">Support</a>
+  </div>
+</footer>
+
+</body>
+</html>
