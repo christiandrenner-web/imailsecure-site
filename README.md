@@ -24,16 +24,18 @@ grep -rn "placeholder" *.html
 
 Zu ersetzen:
 
-| Platzhalter | Wofür |
-|---|---|
-| `[Vor- und Nachname]` | Betreiber, Impressum (§ 5 DDG), Verantwortlicher nach DSGVO |
-| `[Straße und Hausnummer]` | Anschrift (eine ladungsfähige Anschrift ist Pflicht) |
-| `[PLZ und Ort]` | Anschrift |
-| `[kontakt@deine-domain.example]` | Kontaktadresse in Datenschutz, Impressum und Support |
-| `[TT. Monat JJJJ]` | Stand der Datenschutzerklärung |
+| Platzhalter | Wofür | Status |
+|---|---|---|
+| `[Vor- und Nachname]` | Betreiber, Impressum (§ 5 DDG), Verantwortlicher nach DSGVO | ✅ Christian Renner |
+| `[Straße und Hausnummer]` | Anschrift (eine ladungsfähige Anschrift ist Pflicht) | ✅ Steigerstr. 101b |
+| `[PLZ und Ort]` | Anschrift | ✅ 06493 Harzgerode |
+| `[TT. Monat JJJJ]` | Stand der Datenschutzerklärung | ✅ 1. November 2026 |
+| `[kontakt@deine-domain.example]` | Kontaktadresse in Datenschutz, Impressum und Support | ⬜ **offen** |
 
 Die Kontaktadresse muss ein **funktionierendes Postfach** sein. Apple prüft
-Support- und Datenschutz-URL vor der Freigabe.
+Support- und Datenschutz-URL vor der Freigabe, und das Impressum verlangt eine
+schnelle elektronische Kontaktaufnahme. Eine Adresse wie
+`imailsecure.app@…` bei einem Freemailer reicht dafür aus.
 
 ## Veröffentlichen über GitHub Pages
 
