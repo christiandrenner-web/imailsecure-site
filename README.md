@@ -29,7 +29,7 @@ Zu ersetzen:
 | `[Vor- und Nachname]` | Betreiber, Impressum (§ 5 DDG), Verantwortlicher nach DSGVO | ✅ Christian Renner |
 | `[Straße und Hausnummer]` | Anschrift (eine ladungsfähige Anschrift ist Pflicht) | ✅ Steigerstr. 101b |
 | `[PLZ und Ort]` | Anschrift | ✅ 06493 Harzgerode |
-| `[TT. Monat JJJJ]` | Stand der Datenschutzerklärung | ✅ 1. November 2026 |
+| `[TT. Monat JJJJ]` | Stand der Datenschutzerklärung | ✅ 2. November 2026 |
 | `[kontakt@deine-domain.example]` | Kontaktadresse in Datenschutz, Impressum und Support | ⬜ **offen** |
 
 Die Kontaktadresse muss ein **funktionierendes Postfach** sein. Apple prüft
