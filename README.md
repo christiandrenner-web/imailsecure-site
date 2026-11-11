@@ -30,7 +30,7 @@ Zu ersetzen:
 | `[Straße und Hausnummer]` | Anschrift (eine ladungsfähige Anschrift ist Pflicht) | ✅ Steigerstr. 101b |
 | `[PLZ und Ort]` | Anschrift | ✅ 06493 Harzgerode |
 | `[TT. Monat JJJJ]` | Stand der Datenschutzerklärung | ✅ 2. November 2026 |
-| `[kontakt@deine-domain.example]` | Kontaktadresse in Datenschutz, Impressum und Support | ⬜ **offen** |
+| `chr.renner@mein.gmx` | Kontaktadresse in Datenschutz, Impressum und Support | ✅ eingetragen |
 
 Die Kontaktadresse muss ein **funktionierendes Postfach** sein. Apple prüft
 Support- und Datenschutz-URL vor der Freigabe, und das Impressum verlangt eine
