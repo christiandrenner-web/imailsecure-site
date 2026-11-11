@@ -37,42 +37,29 @@ Support- und Datenschutz-URL vor der Freigabe, und das Impressum verlangt eine
 schnelle elektronische Kontaktaufnahme. Eine Adresse wie
 `imailsecure.app@…` bei einem Freemailer reicht dafür aus.
 
-## Veröffentlichen über GitHub Pages
+## Veröffentlicht über GitHub Pages
 
-GitHub Pages ist bei GitHub Free nur für **öffentliche** Repositories
-kostenlos. Deshalb liegt die Website in einem eigenen, kleinen Repo — der
-App-Quellcode bleibt davon unberührt.
+Die Website liegt in einem eigenen, öffentlichen Repo; der App-Quellcode
+bleibt davon unberührt. Stand 12. November 2026 ist sie live.
 
-1. Auf GitHub ein **öffentliches** Repository `imailsecure-site` anlegen
-   (ohne README, ohne .gitignore).
-2. Dieses Verzeichnis pushen:
+- Repo: <https://github.com/christiandrenner-web/imailsecure-site>
+- Pages: *Deploy from a branch*, Branch `main`, Ordner `/ (root)`, HTTPS erzwungen
+- Änderungen: committen und nach `main` pushen — Pages baut automatisch.
 
-   ```bash
-   cd ~/XCODE/imailsecure-site
-   git remote add origin git@github.com:christiandrenner-web/imailsecure-site.git
-   git branch -M main
-   git push -u origin main
-   ```
+Die Seite ist erreichbar unter:
 
-3. Im Repo: **Settings → Pages**
-   - Source: *Deploy from a branch*
-   - Branch: `main`, Ordner: `/ (root)`
-   - Save
+```
+https://christiandrenner-web.github.io/imailsecure-site/
+https://christiandrenner-web.github.io/imailsecure-site/privacy.html
+https://christiandrenner-web.github.io/imailsecure-site/support.html
+```
 
-4. Nach ein bis zwei Minuten ist die Seite erreichbar unter:
+Diese URLs sind bereits in der App eingetragen —
+`Sources/iMailSecure/Utilities/Constants.swift`:
 
-   ```
-   https://christiandrenner-web.github.io/imailsecure-site/
-   https://christiandrenner-web.github.io/imailsecure-site/privacy.html
-   https://christiandrenner-web.github.io/imailsecure-site/support.html
-   ```
-
-5. Diese URLs sind bereits in der App eingetragen —
-   `Sources/iMailSecure/Utilities/Constants.swift`:
-
-   ```swift
-   static let privacyPolicyURL = "https://christiandrenner-web.github.io/imailsecure-site/privacy.html"
-   ```
+```swift
+static let privacyPolicyURL = "https://christiandrenner-web.github.io/imailsecure-site/privacy.html"
+```
 
 ## Eigene Domain (optional, später)
 
