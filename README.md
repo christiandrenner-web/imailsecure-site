@@ -7,6 +7,7 @@ Absicht: Die Seite soll dieselbe Haltung zeigen wie die App.
 ```
 index.html      Startseite
 privacy.html    Datenschutzerklärung + Impressum
+terms.html      Nutzungsbedingungen (AGB) + Abo-Bedingungen
 support.html    Hilfe und Kontakt
 style.css       gemeinsames Stylesheet (lokal, kein CDN)
 .nojekyll       GitHub Pages: kein Jekyll-Processing
@@ -29,7 +30,7 @@ Zu ersetzen:
 | `[Vor- und Nachname]` | Betreiber, Impressum (§ 5 DDG), Verantwortlicher nach DSGVO | ✅ Christian Renner |
 | `[Straße und Hausnummer]` | Anschrift (eine ladungsfähige Anschrift ist Pflicht) | ✅ Steigerstr. 101b |
 | `[PLZ und Ort]` | Anschrift | ✅ 06493 Harzgerode |
-| `[TT. Monat JJJJ]` | Stand der Datenschutzerklärung | ✅ 2. November 2026 |
+| `[TT. Monat JJJJ]` | Stand der Datenschutzerklärung | ✅ 11. November 2026 |
 | `chr.renner@mein.gmx` | Kontaktadresse in Datenschutz, Impressum und Support | ✅ eingetragen |
 
 Die Kontaktadresse muss ein **funktionierendes Postfach** sein. Apple prüft
@@ -51,6 +52,7 @@ Die Seite ist erreichbar unter:
 ```
 https://christiandrenner-web.github.io/imailsecure-site/
 https://christiandrenner-web.github.io/imailsecure-site/privacy.html
+https://christiandrenner-web.github.io/imailsecure-site/terms.html
 https://christiandrenner-web.github.io/imailsecure-site/support.html
 ```
 
@@ -59,7 +61,24 @@ Diese URLs sind bereits in der App eingetragen —
 
 ```swift
 static let privacyPolicyURL = "https://christiandrenner-web.github.io/imailsecure-site/privacy.html"
+static let termsOfUseURL    = "https://christiandrenner-web.github.io/imailsecure-site/terms.html"
 ```
+
+## `terms.html` ist ein Entwurf
+
+Die Nutzungsbedingungen sind inhaltlich vollständig, aber **nicht anwaltlich
+geprüft**. Auf der Seite stehen deshalb ein `Entwurf`-Badge und ein
+Hinweiskasten. Nach der Prüfung:
+
+1. Badge (`<span class="badge">Entwurf</span>`) und den Hinweiskasten entfernen,
+2. Stand-Datum anpassen,
+3. Preisangaben mit App Store Connect abgleichen (1,99 €/Monat, 17,99 €/Jahr).
+
+Der Entwurf deckt ab: Geltungsbereich, Free/Pro, 7-Tage-Testphase über Apples
+Introductory Offer, Preise, automatische Verlängerung, Kündigung über die
+Apple-ID, Widerrufsrecht bei digitalen Inhalten (§ 356 Abs. 5 BGB), Lizenz des
+Quellcodes (PolyForm Noncommercial, ausdrücklich kein Open Source), Pflichten,
+Verfügbarkeit, Haftungsbegrenzung, Änderungsklausel und Streitbeilegung.
 
 ## Eigene Domain (optional, später)
 
@@ -74,8 +93,8 @@ Erst wenn HTTPS aktiv ist, ist die URL für die App-Store-Einreichung geeignet.
 ## Prüfen
 
 ```bash
-# keine externen Ressourcen (muss leer bleiben)
-grep -nE '(src|href)="https?://' *.html
+# keine externen Ressourcen (muss leer bleiben; <a href="https://…"> ist erlaubt)
+grep -nE '(<link[^>]+href|src)="https?://' *.html
 
 # Platzhalter (muss leer bleiben)
 grep -n "placeholder" *.html
